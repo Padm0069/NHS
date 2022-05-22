@@ -14,6 +14,7 @@ body {
 }
 
 #page-wrapper {
+    
     padding: 30px 15px 0 15px;
     min-height: 568px;
     min-height: 100%;
@@ -25,6 +26,8 @@ body {
         position: inherit;
         padding: 25px 10px 0 10px;
         min-height: 100vh;
+        display: flex;
+    justify-content: center;
     }
 }
 
@@ -703,7 +706,7 @@ table.dataTable thead .sorting:after {
     .nav-options{
         display: none;
     }
-    .btn{
+    .btn-logout{
         display: none;
     }
 }
@@ -748,3 +751,9 @@ table.dataTable thead .sorting:after {
     /* background-color: #04AA6D; */
     color: white;
   }
+
+  /* _____________________________________________________________________ */
+
+
+
+ 
