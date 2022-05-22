@@ -14,6 +14,7 @@ body {
 }
 
 #page-wrapper {
+    
     padding: 30px 15px 0 15px;
     min-height: 568px;
     min-height: 100%;
@@ -23,12 +24,13 @@ body {
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;
-        margin-left: 200px; /*Changed from 250*/
         padding: 25px 10px 0 10px;
-        border-left: 1px solid #e7e7e7;
-        min-height: 100%;
+        min-height: 100vh;
+        display: flex;
+    justify-content: center;
     }
 }
+
 
 .navbar-header {
     float: left;
@@ -680,3 +682,78 @@ table.dataTable thead .sorting:after {
     color: #fff; /* active text color */
     background-color: #a94442; /* active bg color */
 }
+
+/* __________________________________________________________________ */
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    font-size: 1.2em;
+}
+
+.nav-options{
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding: 19px;
+}
+
+.nav-list{
+    padding: 0px 1.8em;
+}
+
+@media(max-width:768px) {
+    .nav-options{
+        display: none;
+    }
+    .btn-logout{
+        display: none;
+    }
+}
+@media(min-width:768px) {
+    .topnav{
+        display: none;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    /* background: black; */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /* Style the active link (or home/logo) */
+  .active-nav {
+    /* background-color: #04AA6D; */
+    color: white;
+  }
+
+  /* _____________________________________________________________________ */
+
+
+
+ 
